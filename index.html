@@ -4,29 +4,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IxD Project 2025</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
-      
-      <div class="tab">
-  <button class="tablinks" onclick="open(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="openC(event, 'Competitive Audit')">Competitive Audit</button>
-  <button class="tablinks" onclick="open(event, 'WireFrames')">Wireframes</button>
-    <button class="tablinks" onclick="open(event, 'Prototype')">Prototype</button>
-           <button class="tablinks" onclick="open(event, 'Usability Test')">Usability Test</button>
-          
-</div>
+    
+        <nav class="sidebar">
+            <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'CompetitiveAudit')">Competitive Audit</button>
+            <button class="tablinks" onclick="openTab(event, 'Wireframes')">Wireframes</button>
+            <button class="tablinks" onclick="openTab(event, 'Prototype')">Prototype</button>
+            <button class="tablinks" onclick="openTab(event, 'UsabilityTest')">Usability Test</button>
+        </nav>
 
-        <!-- Main content -->
+        
         <main class="content">
-            <h1>IxD Project 2025</h1>
-            <p><strong>Author:</strong> Fiona Strasser</p>
-            <p><strong>Email:</strong> C00312667@setu.ie</p>
+            <div id="Home" class="tabcontent">
+                <h1>IxD Project 2025</h1>
+                <p><strong>Author:</strong> Fiona Strasser</p>
+                <p><strong>Email:</strong> C00312667@setu.ie</p>
 
-            <h2>Introduction</h2>
-            <p>Welcome to the introduction of my interaction design project, focused on gamifying a learning app. Our aim is to make the learning experience more engaging and interactive for our users.</p>
-            <p>Gamification involves applying game design principles to non-game contexts, such as education. The objective is to increase user motivation, engagement, and enjoyment.</p>
-            <p>This project involved various phases, including a competitive analysis, wireframing, prototyping, and usability testing. The competitive analysis will help me identify strengths and weaknesses in the existing market and highlight areas we can improve.</p>
+                <h2>Introduction</h2>
+                <p>Welcome to the introduction of my interaction design project, focused on gamifying a learning app. Our aim is to make the learning experience more engaging and interactive for our users.</p>
+                <p>Gamification involves applying game design principles to non-game contexts, such as education. The objective is to increase user motivation, engagement, and enjoyment.</p>
+                <p>This project involved various phases, including a competitive analysis, wireframing, prototyping, and usability testing. The competitive analysis will help me identify strengths and weaknesses in the existing market and highlight areas we can improve.</p>
+            </div>
+
+            <div id="CompetitiveAudit" class="tabcontent" style="display:none;">
+                <h2>Competitive Audit</h2>
+                <p>Content for Competitive Audit goes here...</p>
+            </div>
+
+            <div id="Wireframes" class="tabcontent" style="display:none;">
+                <h2>Wireframes</h2>
+                <p>Content for Wireframes goes here...</p>
+            </div>
+
+            <div id="Prototype" class="tabcontent" style="display:none;">
+                <h2>Prototype</h2>
+                <p>Content for Prototype goes here...</p>
+            </div>
+
+            <div id="UsabilityTest" class="tabcontent" style="display:none;">
+                <h2>Usability Test</h2>
+                <p>Content for Usability Test goes here...</p>
+            </div>
         </main>
     </div>
 </body>
