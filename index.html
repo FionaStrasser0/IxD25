@@ -34,9 +34,18 @@
   .tabs__button--active{
     font-weight:bold;
     border-right:2px solid #009879;
-    background:#dddddd; 
-    
+    background:#dddddd;
   }
+    .tabs__content{
+        padding:15px;
+        font-size:0.8rem;
+        display:none;
+        
+    }
+    .tabs__content--active{
+        display:block;
+    }
+    
   </body>
 </style>
 </head>
@@ -50,7 +59,7 @@
             <button class="tabs__button" data-for-tab="4">Prototype</button>
             <button class="tabs__button" data-for-tab="5">Usability Testing</button>
         </div>
-        <div class="tabs__conetent" data-tab="1">
+        <div class="tabs__conetent tabs__content--active" data-tab="1">
             <h2>
                 tab 1
             </h2>
