@@ -5,68 +5,45 @@
     <title>IxD Project 2025</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-    <title>CSS Tbas</title>
-    <style>
-body{
-    margin:50px;
-}
-.tabs{
-   display: flex;
-    flex-wrap:wrap;
-    max-width:400px;
-    font-family; sans-serif;
-}
-.tabs__label{
-  paddings:10px 16px;
-    cursor:pointer;
-}
-.tabs__radio{
-    display:none;
-}
-.tabs__content{
-    order:1;
-    width:100%;
-    border-bottom:3px solid #dddddd;
-    line-height:1.5;
-    font-size:0.9em;
-    display:none;
-}
-.tabs__radio:checked+.tabs__label{
-    font-weight:bold;
-    color:#009578;
-    border-bottom:2px solid #009578;
-}
-.tabs__radio:checked+.tabs__label+.tabs__content{
-    display:initial;
-}
-</style>
+
 </head>
 <body>
+<H1> TABS</H1>
     <div class="tabs">
-        <input type="radio" class="tabs__radio" name="tabs-example" id="Home" checked>
-        <label for="Home" class="tabs__label">Home</label>
-        <div clss="tabs__content">
+        <div class="tabs__sidebar">
+            <button class="tabs__button" data-for-tab="1">Home</button>
+            <button class="tabs__button" data-for-tab="2">Competitive Audit</button>
+            <button class="tabs__button" data-for-tab="3">Wireframes</button>
+            <button class="tabs__button" data-for-tab="4">Prototype</button>
+            <button class="tabs__button" data-for-tab="5">Usability Testing</button>
         </div>
-          <input type="radio" class="tabs__radio" name="tabs-example" id="CompetitiveAudit" >
-        <label for="CompetitiveAudit" class="tabs__label">CompetitiveAudit</label>
-        <div clss="tabs__content">
-            CONTENT 2
+        <div class="tabs__conetent" data-tab="1">
+            <h2>
+                tab 1
+            </h2>
         </div>
-        <input type="radio" class="tabs__radio" name="tabs-example" id="Wireframes" >
-        <label for="Wireframes" class="tabs__label">Wireframes</label>
-        <div clss="tabs__content">
-            CONTENT 3
+         <div class="tabs__conetent" data-tab="2">
+            <h2>
+                tab 2
+            </h2>
         </div>
-        <input type="radio" class="tabs__radio" name="tabs-example" id="Prototype" >
-        <label for="Prototype" class="tabs__label">Prototype</label>
-        <div clss="tabs__content">
-            CONTENT 4
+         <div class="tabs__conetent" data-tab="3">
+            <h2>
+                tab 3
+            </h2>
         </div>
-        <input type="radio" class="tabs__radio" name="tabs-example" id="UsabilityTest" >
-        <label for="UsabilityTest" class="tabs__label">UsabilityTest</label>
-        <div clss="tabs__content">
-            CONTENT 5
+         <div class="tabs__conetent" data-tab="4">
+            <h2>
+                tab 4
+            </h2>
         </div>
+         <div class="tabs__conetent" data-tab="5">
+            <h2>
+                tab 5
+            </h2>
+        </div>
+
+         
     </div>
 </body>
 </html>
