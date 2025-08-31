@@ -7,17 +7,18 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
+    <div class="tabs">
+        <input type="radio" class="tabs__radio" name="tabs-example" id="Home" checked>
+        <label for="Home" class="tabs__label">Home</label>
+        <div clss="tabs__content">
+        </div>
+          <input type="radio" class="tabs__radio" name="tabs-example" id="CompetitiveAudit" checked>
+        <label for="CompetitiveAudit" class="tabs__label">CompetitiveAudit</label>
+        <div clss="tabs__content">
+        </div>
+    </div>
     
-        <nav class="sidebar">
-            <!-- Navigation -->
-            <a href="index.html"><button>Home</button></a>
-            <a href="competitive-audit.html"><button>Competitive Audit</button></a>
-            <a href="wireframes.html"><button>Wireframes</button></a>
-            <a href="prototype.html"><button>Prototype</button></a>
-            <a href="usability-test.html"><button>Usability Test</button></a>
-
-        </nav>
+       
 
         
         <main class="content">
