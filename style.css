@@ -1,3 +1,4 @@
+body{
 .tabs{
   border: 1px solid #eeeeee;
   display: flex;
@@ -16,4 +17,4 @@
   outline:none;
   cursor:pointer;
 }
-
+}
