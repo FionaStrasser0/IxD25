@@ -1,12 +1,12 @@
 body{
 .tabs{
-  border: 1px solid #eeeeee;
+  border: 1px solid #cccccc;
   display: flex;
 }
 .tabs__sidebar{
   width: 125px;
   flex-shrink:0;
-  background:#eeeeee;
+  background:#cccccc;
 }
 .tabs__button{
   display:block;
@@ -21,7 +21,7 @@ body{
     background:#dddddd;
   }
    .tabs__button:not(:last-of-type){
-   border-bottom:1px solid #eeeeee;
+   border-bottom:1px solid #cccccc;
   }
   .tabs__button--active{
     font-weight:bold;
