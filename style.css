@@ -17,4 +17,17 @@ body{
   outline:none;
   cursor:pointer;
 }
+  .tabs__button:active{
+    background:#dddddd;
+  }
+   .tabs__button:not(:last-of-type){
+   border-bottom:1px solid #eeeeee;
+  }
+  .tabs__button--active{
+    font-weight:bold;
+    border-right:2px solid #009879;
+    background:#dddddd; 
+    
+  }
+  
 }
