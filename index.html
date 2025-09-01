@@ -32,7 +32,7 @@
 
 		<script>
 			function setupTabs () {
-				document.querySelectorAll(".tabs__content").forEach(button => {
+				document.querySelectorAll(".tabs__button").forEach(button => {
 					button.addEventListener("click" , () => {
 						const sideBar = button.parentElement;
 						const tabsContainer = sidebar.parentElement;
@@ -47,6 +47,9 @@
 					});
 				});
 			}
+			document.addEventListener("DOMcontentLoaded"), () => {
+				setupTabs(); 
+			});
 		</script>
 	
 </div>
