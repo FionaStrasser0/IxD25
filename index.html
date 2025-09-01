@@ -9,36 +9,54 @@
 </head>
 <body>
 <H1> TABS</H1>
-   <div class="tabs">
+ <div class="tabs">
 
-  <!-- Radio inputs (only one can be selected at a time) -->
+  <!-- Hidden radios to manage state -->
   <input type="radio" name="tab" id="tab1" checked>
   <input type="radio" name="tab" id="tab2">
   <input type="radio" name="tab" id="tab3">
+  <input type="radio" name="tab" id="tab4">
+  <input type="radio" name="tab" id="tab5">
 
-  <!-- Sidebar with labels acting as buttons -->
-  <div class="tabs__sidebar">
+  <!-- Sidebar -->
+  <aside class="tabs__sidebar">
     <label for="tab1" class="tabs__button">Home</label>
-    <label for="tab2" class="tabs__button">Wireframes</label>
-    <label for="tab3" class="tabs__button">Usability Test</label>
-  </div>
+    <label for="tab2" class="tabs__button">Competitive Audit</label>
+    <label for="tab3" class="tabs__button">Wireframes</label>
+    <label for="tab4" class="tabs__button">Prototype</label>
+    <label for="tab5" class="tabs__button">Usability Test</label>
+  </aside>
 
-  <!-- Tab content -->
-  <div class="tabs__content" id="content1">
-    <h2>Home</h2>
-    <p>Welcome to the interaction design project!</p>
-  </div>
+  <!-- Content area -->
+  <section class="tabs__content" id="content1">
+    <h1>IxD Project 2023</h1>
+    <p><strong>Author:</strong> Ken Power</p>
+    <p><strong>Email:</strong> ken.power@setu.ie</p>
+    <h2>Introduction</h2>
+    <p>Welcome to the introduction of my interaction design project, focused on gamifying a learning app...</p>
+  </section>
 
-  <div class="tabs__content" id="content2">
+  <section class="tabs__content" id="content2">
+    <h2>Competitive Audit</h2>
+    <p>Details about competitive audit go here.</p>
+  </section>
+
+  <section class="tabs__content" id="content3">
     <h2>Wireframes</h2>
-    <p>These are the wireframes of the application.</p>
-  </div>
+    <p>This section contains wireframes.</p>
+  </section>
 
-  <div class="tabs__content" id="content3">
+  <section class="tabs__content" id="content4">
+    <h2>Prototype</h2>
+    <p>This section contains prototype information.</p>
+  </section>
+
+  <section class="tabs__content" id="content5">
     <h2>Usability Test</h2>
-    <p>This section contains usability test results.</p>
-  </div>
+    <p>Results from usability testing are shown here.</p>
+  </section>
 </div>
+
 
    
 </body>
