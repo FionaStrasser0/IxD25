@@ -9,40 +9,37 @@
 </head>
 <body>
 <H1> TABS</H1>
-    <div class="tabs">
-        <div class="tabs__sidebar">
-            <button class="tabs__button tabs__button--active" data-for-tab="1">Home</button>
-            <button class="tabs__button" data-for-tab="2">Competitive Audit</button>
-            <button class="tabs__button" data-for-tab="3">Wireframes</button>
-            <button class="tabs__button" data-for-tab="4">Prototype</button>
-            <button class="tabs__button" data-for-tab="5">Usability Testing</button>
-        </div>
-        <div class="tabs__conetent tabs__content--active" data-tab="1">
-            <h2>
-                tab 1
-            </h2>
-        </div>
-         <div class="tabs__conetent" data-tab="2">
-            <h2>
-                tab 2
-            </h2>
-        </div>
-         <div class="tabs__conetent" data-tab="3">
-            <h2>
-                tab 3
-            </h2>
-        </div>
-         <div class="tabs__conetent" data-tab="4">
-            <h2>
-                tab 4
-            </h2>
-        </div>
-         <div class="tabs__conetent" data-tab="5">
-            <h2>
-                tab 5
-            </h2>
-        </div>
-    </div>
+   <div class="tabs">
+
+  <!-- Radio inputs (only one can be selected at a time) -->
+  <input type="radio" name="tab" id="tab1" checked>
+  <input type="radio" name="tab" id="tab2">
+  <input type="radio" name="tab" id="tab3">
+
+  <!-- Sidebar with labels acting as buttons -->
+  <div class="tabs__sidebar">
+    <label for="tab1" class="tabs__button">Home</label>
+    <label for="tab2" class="tabs__button">Wireframes</label>
+    <label for="tab3" class="tabs__button">Usability Test</label>
+  </div>
+
+  <!-- Tab content -->
+  <div class="tabs__content" id="content1">
+    <h2>Home</h2>
+    <p>Welcome to the interaction design project!</p>
+  </div>
+
+  <div class="tabs__content" id="content2">
+    <h2>Wireframes</h2>
+    <p>These are the wireframes of the application.</p>
+  </div>
+
+  <div class="tabs__content" id="content3">
+    <h2>Usability Test</h2>
+    <p>This section contains usability test results.</p>
+  </div>
+</div>
+
    
 </body>
 </html>
