@@ -34,8 +34,6 @@
 	
 }
 
-
-
 .tabs__content{
 	padding: 15px;
 	font-size: 0.8rem;
@@ -46,3 +44,8 @@
 .tabs__content--active{
 	display: block;
 }
+
+.tabs__content > :first-child{
+	margin-top: 0;
+}
+
