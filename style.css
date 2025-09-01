@@ -1,72 +1,82 @@
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+ccc; 
+	background-repeat: no-repeat;
+	font: 400 16px/1.5em "Open Sans", sans-serif;
+}
+.page-content {
+	max-width: 700px; 
+	margin: 32px auto; 
+	padding: 32px; 
+	background: #fff;
+}
+a {
+	color: #21D4FD; 
+	transition: all 0.3s;
+}
+a:hover {
+	color: #B721FF;
+}
+
+.tabbed {
+	overflow-x: hidden; /* so we could easily hide the radio inputs */
+	margin: 32px 0;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #ccc;
+}
+
+.tabbed [type="radio"] {
+	/* hiding the inputs */
+	display: none;
 }
 
 .tabs {
-  display: flex;
-  max-width: 1100px;
-  margin: 2rem auto;
-  border: 1px solid #ccc;
-  min-height: 500px;
+	display: flex;
+	align-items: stretch;
+	list-style: none;
+	padding: 0;
+	border-bottom: 1px solid #ccc;
+}
+.tab > label {
+	display: block;
+	margin-bottom: -1px;
+	padding: 12px 15px;
+	border: 1px solid #ccc;
+	background: #eee;
+	color: #666;
+	font-size: 12px; 
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;	
+	transition: all 0.3s;
+}
+.tab:hover label {
+	border-top-color: #333;
+	color: #333;
 }
 
-/* Hide radios */
-.tabs input[type="radio"] {
-  display: none;
+.tab-content {
+	display: none;
+	color: #777;
 }
 
-/* Sidebar */
-.tabs__sidebar {
-  background: #e0e0e0;
-  width: 220px;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  border-right: 1px solid #ccc;
+/* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) label,
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label,
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) label,
+.tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) label {
+	border-bottom-color: #fff;
+	border-top-color: #B721FF;
+	background: #fff;
+	color: #222;
 }
 
-/* Buttons as labels */
-.tabs__button {
-  padding: 15px;
-  cursor: pointer;
-  border-bottom: 1px solid #ccc;
-  text-align: left;
-  background: #e0e0e0;
-  font-size: 16px;
-  transition: background 0.3s ease;
-}
-
-.tabs__button:hover {
-  background: #d0d0d0;
-}
-
-/* Content */
-.tabs__content {
-  display: none;
-  padding: 30px;
-  flex-grow: 1;
-  background: #fff;
-}
-
-/* Show content when corresponding radio is checked */
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4,
-#tab5:checked ~ #content5 {
-  display: block;
-}
-
-/* Active tab highlighting */
-#tab1:checked ~ .tabs__sidebar label[for="tab1"],
-#tab2:checked ~ .tabs__sidebar label[for="tab2"],
-#tab3:checked ~ .tabs__sidebar label[for="tab3"],
-#tab4:checked ~ .tabs__sidebar label[for="tab4"],
-#tab5:checked ~ .tabs__sidebar label[for="tab5"] {
-  background: #fff;
-  font-weight: bold;
-  border-left: 4px solid #009879;
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3),
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tab-content:nth-of-type(4) {
+	display: block;
 }
 
