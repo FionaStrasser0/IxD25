@@ -29,6 +29,25 @@
 		Tab #3
 	</h2>
 </div>
+
+		<script>
+			function setupTabs () {
+				document.querySelectorAll(".tabs__content").forEach(button => {
+					button.addEventListener("click" , () => {
+						const sideBar = button.parentElement;
+						const tabsContainer = sidebar.parentElement;
+						const tabsNumber = button.dataset.forTab;
+						const tabToActivate = tabsContainer.querySelector('.tabs__content[data-tab="${tabNumber}"]);
+																		  
+						console.log(sideBar);
+						console.log(tabsContainer);
+						console.log(tabsNumber);
+						console.log(tabToActivate);
+						
+					});
+				});
+			}
+		</script>
 	
 </div>
 
