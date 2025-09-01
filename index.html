@@ -43,26 +43,7 @@
             </h2>
         </div>
     </div>
-    <script>
-        funtion setupTabs() {
-            document.quertSelectorAll(".tabs__button").forEach(button=>{
-                button.addEventListener("click", () => {
-                    const sidebar=button.parentElenemt;
-                    const tabsContainer=sidebar.parentElement;
-                    const tabNumber=button.dataset.forTab;
-                    const tabToActivate=tabsContainer.querySelector('.tabs__content[data-tab="${tabNumber}"]');
-                    console.log(sidebar);
-                    console.log(tabsContainer);
-                    console.log(tabNumber);
-                    console.log(tabToActivate);
-                });
-            });
-        }
-        document.addEventListener("DOMContentLoaded",() => {
-            setupTabs();
-        });
-                                  
-    </script>
+   
 </body>
 </html>
 
