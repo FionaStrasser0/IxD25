@@ -34,9 +34,15 @@
 	
 }
 
+
+
 .tabs__content{
 	padding: 15px;
 	font-size: 0.8rem;
 	display:none;
 	
+}
+
+.tabs__content--active{
+	display: block;
 }
