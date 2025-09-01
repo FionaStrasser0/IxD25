@@ -26,3 +26,10 @@
 .tabs__button:not(:last-of-type){
 	border-bottom: 1px solid #cccccc;
 }
+
+.tabs__button--active{
+	font-weight: bold;
+	border-right: 2px solid #009879;
+	backgorund: #dddddd;
+	
+}
