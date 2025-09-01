@@ -2,11 +2,13 @@
 	border: 1px solid #cccccc;
 	display: flex;
 }
+
 .tabs__sidebar{
 	width: 125px;
 	flex-shrink: 0;
 	background: #cccccc;
 }
+
 .tabs__button{
 	display: block;
 	padding: 10px;
@@ -15,4 +17,12 @@
 	width: 100%;
 	outline: none;
 	cursor: pointer;
+}
+
+.tabs__button:active{
+	background: #dddddd;
+}
+
+.tabs__button:not(:last-of-type){
+	border-bottom: 1px solid #cccccc;
 }
